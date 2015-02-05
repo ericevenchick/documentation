@@ -15,6 +15,12 @@ On Mac OS you have the choice of the command line `dd` tool or using the graphic
     ```
 
     Remember to replace `n` with the number that you noted before!
+    
+- **Note**: it is _much_ faster to use the raw block device, which has the name `/dev/rdiskn`. For example:
+
+    ```
+    sudo dd bs=1m if=path_of_your_image.img of=/dev/rdiskn
+    ```
 
 ## Command line
 
